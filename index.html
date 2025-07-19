@@ -91,27 +91,12 @@
             background: #2c5aa0;
         }
         
-        .about-section {
-            margin-bottom: 40px;
-        }
-        
-        .about-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #2d3748;
-        }
-        
-        .about-text {
-            font-size: 1rem;
-            margin-bottom: 15px;
-            color: #4a5568;
-        }
-        
+        .about-section,
         .journey-section {
             margin-bottom: 40px;
         }
         
+        .about-title,
         .journey-title {
             font-size: 1.4rem;
             font-weight: 700;
@@ -119,6 +104,7 @@
             color: #2d3748;
         }
         
+        .about-text,
         .journey-text {
             font-size: 1rem;
             margin-bottom: 15px;
@@ -171,29 +157,40 @@
     </style>
 </head>
 <body>
-    <!-- 1. "What's in it for me" headline -->
+
+    <!-- 1. Headline -->
     <h1 class="headline">Write Your Book in 30 Days (Even If You've Never Written More Than an Email)</h1>
     
-    <!-- 2. "Exactly what they get" subheading -->
+    <!-- 2. Subheading -->
     <p class="subheading">Get the complete 30-Day Book Sprint Method PDF + 7-day email course with case studies, templates, and step-by-step guidance for busy South African professionals.</p>
     
-    <!-- 3. 1-2 sentences that prove expertise -->
+    <!-- 3. Proof of expertise -->
     <p class="proof">I've helped 47+ professionals from Johannesburg to Cape Town finish their books using this exact method. Frederick regained his writing confidence, Tiego got clarity on his book project, and Dr. Eden transformed from Science PhD to coach with a book in progress.</p>
     
-    <!-- 4. Basic form to capture emails -->
+    <!-- 4. Email form -->
     <div class="email-form">
         <h3 class="form-title">Get Your Free 30-Day Book Sprint Method</h3>
-        <script async data-uid="6268bc560f" src="https://ralph-publishers.kit.com/6268bc560f/index.js"></script>
+        
+        <!-- ConvertKit script embed -->
+        <script async data-uid="6268bc560f" src="https://f.convertkit.com/6268bc560f.js"></script>
+        
+        <!-- Fallback HTML form -->
+        <form action="https://app.convertkit.com/forms/6268bc560f/subscriptions" method="post">
+            <div class="form-group">
+                <input type="email" name="email_address" placeholder="Enter your email" required />
+            </div>
+            <button type="submit" class="submit-btn">Send Me the Method</button>
+        </form>
     </div>
     
-    <!-- 5. Introduce yourself -->
+    <!-- 5. About section -->
     <div class="about-section">
         <h2 class="about-title">Hi, I'm Ralph Kapiamba</h2>
         <p class="about-text">I'm a book coach and publisher who specializes in helping busy South African professionals turn their expertise into published books that build authority and create new opportunities.</p>
         <p class="about-text">I've worked with executives, entrepreneurs, and consultants who had brilliant ideas locked in their heads but couldn't figure out how to get them onto paper - especially while managing demanding careers and South African realities like load shedding.</p>
     </div>
     
-    <!-- 6. Outline your journey -->
+    <!-- 6. Journey section -->
     <div class="journey-section">
         <h2 class="journey-title">How I Discovered This Method</h2>
         <p class="journey-text">After watching countless smart professionals struggle for years to write their books, I realized the problem wasn't lack of knowledge or writing ability - it was lack of a systematic approach that worked within their busy lives.</p>
@@ -201,7 +198,7 @@
         <p class="journey-text">Since then, I've helped dozens of professionals become published authors, with some using their books to attract R200,000+ in new business and speaking opportunities.</p>
     </div>
     
-    <!-- 7. Summary for anyone who skipped to the end -->
+    <!-- 7. Summary -->
     <div class="summary-box">
         <h3 class="summary-title">What You Get (For Anyone Who Skipped to the End)</h3>
         <ul class="summary-list">
@@ -213,9 +210,10 @@
             <li>Templates, checklists, and motivation systems</li>
         </ul>
         <p style="margin-bottom: 20px; color: #4a5568;">Free. Delivered instantly. Unsubscribe anytime.</p>
-        
-        <script async data-uid="6268bc560f" src="https://ralph-publishers.kit.com/6268bc560f/index.js"></script>
+
+        <!-- Second embed (optional redundancy or remove if not needed) -->
+        <script async data-uid="6268bc560f" src="https://f.convertkit.com/6268bc560f.js"></script>
     </div>
-    
+
 </body>
 </html>
