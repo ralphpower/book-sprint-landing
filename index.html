@@ -1,219 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30-Day Book Sprint Method - Ralph Publishers</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background: #ffffff;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .headline {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            color: #1a202c;
-            line-height: 1.2;
-        }
-        
-        .subheading {
-            font-size: 1.3rem;
-            color: #4a5568;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-        
-        .proof {
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            color: #2d3748;
-        }
-        
-        .email-form {
-            background: #f7fafc;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 50px;
-            border: 2px solid #e2e8f0;
-        }
-        
-        .form-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #2d3748;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e2e8f0;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            background: white;
-        }
-        
-        .form-group input:focus {
-            outline: none;
-            border-color: #4299e1;
-        }
-        
-        .submit-btn {
-            width: 100%;
-            background: #3182ce;
-            color: white;
-            padding: 15px;
-            border: none;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        
-        .submit-btn:hover {
-            background: #2c5aa0;
-        }
-        
-        .about-section,
-        .journey-section {
-            margin-bottom: 40px;
-        }
-        
-        .about-title,
-        .journey-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #2d3748;
-        }
-        
-        .about-text,
-        .journey-text {
-            font-size: 1rem;
-            margin-bottom: 15px;
-            color: #4a5568;
-        }
-        
-        .summary-box {
-            background: #edf2f7;
-            padding: 25px;
-            border-radius: 8px;
-            border-left: 4px solid #3182ce;
-        }
-        
-        .summary-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #2d3748;
-        }
-        
-        .summary-list {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-        
-        .summary-list li {
-            margin-bottom: 8px;
-            color: #4a5568;
-        }
-        
-        .summary-list li:before {
-            content: "✓ ";
-            color: #38a169;
-            font-weight: bold;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 15px;
-            }
-            
-            .headline {
-                font-size: 2rem;
-            }
-            
-            .subheading {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Sprint Landing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin-top: 60px;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    input[type="email"] {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 1rem;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4338ca;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Join the Book Sprint</h1>
+    <p>Finish your book in just 30 days with expert guidance. Enter your email below to get started.</p>
 
-    <!-- 1. Headline -->
-    <h1 class="headline">Write Your Book in 30 Days (Even If You've Never Written More Than an Email)</h1>
-    
-    <!-- 2. Subheading -->
-    <p class="subheading">Get the complete 30-Day Book Sprint Method PDF + 7-day email course with case studies, templates, and step-by-step guidance for busy South African professionals.</p>
-    
-    <!-- 3. Proof of expertise -->
-    <p class="proof">I've helped 47+ professionals from Johannesburg to Cape Town finish their books using this exact method. Frederick regained his writing confidence, Tiego got clarity on his book project, and Dr. Eden transformed from Science PhD to coach with a book in progress.</p>
-    
-    <!-- 4. Email form -->
-    <div class="email-form">
-        <h3 class="form-title">Get Your Free 30-Day Book Sprint Method</h3>
-        
-        <!-- ConvertKit script embed -->
-        <script async data-uid="6268bc560f" src="https://f.convertkit.com/6268bc560f.js"></script>
-        
-        <!-- Fallback HTML form -->
-        <form action="https://app.convertkit.com/forms/6268bc560f/subscriptions" method="post">
-            <div class="form-group">
-                <input type="email" name="email_address" placeholder="Enter your email" required />
-            </div>
-            <button type="submit" class="submit-btn">Send Me the Method</button>
-        </form>
-    </div>
-    
-    <!-- 5. About section -->
-    <div class="about-section">
-        <h2 class="about-title">Hi, I'm Ralph Kapiamba</h2>
-        <p class="about-text">I'm a book coach and publisher who specializes in helping busy South African professionals turn their expertise into published books that build authority and create new opportunities.</p>
-        <p class="about-text">I've worked with executives, entrepreneurs, and consultants who had brilliant ideas locked in their heads but couldn't figure out how to get them onto paper - especially while managing demanding careers and South African realities like load shedding.</p>
-    </div>
-    
-    <!-- 6. Journey section -->
-    <div class="journey-section">
-        <h2 class="journey-title">How I Discovered This Method</h2>
-        <p class="journey-text">After watching countless smart professionals struggle for years to write their books, I realized the problem wasn't lack of knowledge or writing ability - it was lack of a systematic approach that worked within their busy lives.</p>
-        <p class="journey-text">I developed the 30-Day Book Sprint Method by reverse-engineering what actually worked for my most successful clients. No more "someday I'll write my book" - this is about getting it done in 30 days while managing your career, family, and even load shedding.</p>
-        <p class="journey-text">Since then, I've helped dozens of professionals become published authors, with some using their books to attract R200,000+ in new business and speaking opportunities.</p>
-    </div>
-    
-    <!-- 7. Summary -->
-    <div class="summary-box">
-        <h3 class="summary-title">What You Get (For Anyone Who Skipped to the End)</h3>
-        <ul class="summary-list">
-            <li>Complete 30-Day Book Sprint Method PDF (instant download)</li>
-            <li>7-day email course with advanced strategies and case studies</li>
-            <li>Daily writing targets that work around your schedule</li>
-            <li>Load shedding workarounds and mobile writing strategies</li>
-            <li>South African publishing roadmap and cost breakdowns</li>
-            <li>Templates, checklists, and motivation systems</li>
-        </ul>
-        <p style="margin-bottom: 20px; color: #4a5568;">Free. Delivered instantly. Unsubscribe anytime.</p>
+    <!-- ConvertKit Embedded Form -->
+    <script async data-uid="6268bc560f" src="https://f.convertkit.com/6268bc560f.js"></script>
 
-        <!-- Second embed (optional redundancy or remove if not needed) -->
-        <script async data-uid="6268bc560f" src="https://f.convertkit.com/6268bc560f.js"></script>
-    </div>
+    <!-- Fallback Form for browsers without JS -->
+    <form action="https://app.convertkit.com/forms/6268bc560f/subscriptions" method="post">
+      <input type="email" name="email_address" placeholder="Enter your email" required />
+      <button type="submit">Join Now</button>
+    </form>
+  </div>
 
+  <div class="footer">
+    &copy; 2025 Ralph Publishers. All rights reserved.
+  </div>
 </body>
 </html>
